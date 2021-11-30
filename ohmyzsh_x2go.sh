@@ -13,3 +13,4 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 echo " DONT FORGET - zsh-autosuggestions zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-history-substring-search"
 echo "duellj"
 nano .zshrc
+sudo apt-get install xubuntu-desktop x2goserver x2goserver-xsession x2goclient
