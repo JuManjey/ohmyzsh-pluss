@@ -1,9 +1,11 @@
 #!/bin/bash
 
 apt-get update && apt-get upgrade && apt-get dist-upgrade && apt autoclean && apt autoremove python3-pip -y
-apt-get install python3-dev python3-pip python3-setuptools 
+apt-get install python3-dev python3-pip python3-setuptools fzf
 pip3 install thefuck --user
 pip3 install thefuck --upgrade
+pip install thefuck
+pip install virtualenvwrapper
 
 apt-get install zsh -y
 cd ~
@@ -16,7 +18,7 @@ echo " DONT FORGET - zsh-autosuggestions zsh-syntax-highlighting zsh-autosuggest
 
 nano .zshrc
 echo "duellj"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-history-substring-search vagrant genpass gpg-agent kate lpass python shell-proxy systemadmin timer transfer virtualenvwrapper web-search zsh-navigation-tools gitignore git-flow-avh screen systemd vagrant-prompt git-hubflow history-substring-search keychain magic-enter perl pip please poetry pyenv rails redis-cli rust safe-paste supervisor sublime symfony textmate thor universalarchive yii ansible arcanist autoenv bundler command-not-found composer copyfile docker-machine encode64 fancy-ctrl-z firewalld forklift fzf git-extras gitfast glassfish golang grails gulp heroku httpie ipfs kitchen knife_ssh last-working-dir mysql-macports operator-sdk nvm pass pipenvpostgres powify pylint rake rbenv repo rsync ssh-agent sublime-merge svn-fast-info symfony2 taskwarrior terraform thefuck tmux-cssh torrent ubuntu urltools vault virtualenv vscode xcode zbell zsh-interactive-cd pipenv postgres)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-history-substring-search vagrant genpass gpg-agent kate lpass python shell-proxy systemadmin timer transfer virtualenvwrapper web-search zsh-navigation-tools gitignore git-flow-avh screen systemd vagrant-prompt git-hubflow history-substring-search keychain magic-enter perl pip please poetry pyenv rails redis-cli rust safe-paste supervisor sublime symfony textmate thor universalarchive yii ansible arcanist autoenv bundler command-not-found composer copyfile docker-machine encode64 fancy-ctrl-z firewalld forklift fzf git-extras gitfast glassfish golang grails gulp heroku httpie ipfs kitchen knife_ssh last-working-dir mysql-macports operator-sdk nvm pass postgres powify pylint rake rbenv repo rsync ssh-agent sublime-merge svn-fast-info symfony2 taskwarrior terraform thefuck tmux-cssh torrent ubuntu urltools vault virtualenv vscode xcode zbell zsh-interactive-cd pipenv postgres)
 omz update
 omz reload
 source .zshrc
