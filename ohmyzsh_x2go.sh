@@ -6,6 +6,7 @@ pip3 install thefuck --user
 pip3 install thefuck --upgrade
 pip install thefuck
 pip install virtualenvwrapper
+apt-get install thefuck -y
 
 apt-get install zsh -y
 cd ~
