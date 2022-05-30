@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "Updating..."
+apt-get update && apt-get upgrade && apt-get dist-upgrade && apt autoclean && apt autoremove -y
+echo "OK"
+echo "Install python python2 python3 wget curl git htop tmux screen python3-pip memcached libmemcached-tools php-memcached deluge firefox"
+apt-get install python python3 wget curl git htop tmux screen python3-pip memcached libmemcached-tools php-memcached command-not-found tldr vim nano git curl wget htop bash-completion xz-utils zip unzip ufw locales net-tools mc jq make gcc gpg build-essential ncdu sysstat -y
 apt-get update && apt-get upgrade && apt-get dist-upgrade && apt autoclean && apt autoremove python3-pip -y
 apt-get install python3-dev python3-pip python3-setuptools fzf
 pip3 install thefuck --user
@@ -10,7 +15,7 @@ apt-get install thefuck -y
 
 apt-get install zsh -y
 cd ~
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
