@@ -1,0 +1,6 @@
+{
+    "kite.codefinder.enableLineDecoration": true,
+    "kite.developerMode": true,
+    "kite.enableOptionalCompletionsTriggers": true,
+    "kite.pollingInterval": 1000
+}
